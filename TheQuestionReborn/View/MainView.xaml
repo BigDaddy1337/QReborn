@@ -1,0 +1,101 @@
+﻿<Page
+    x:Class="TheQuestionReborn.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TheQuestionReborn"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:attach="using:TheQuestionReborn.Helpers.AttachProperties"
+    mc:Ignorable="d">
+    
+    <Page.Resources>
+
+    </Page.Resources>
+    <Grid Background="{StaticResource BackgroundColor}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="50" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <SplitView x:Name="MySplitView" 
+                   IsPaneOpen="{Binding IsMenuOpen, UpdateSourceTrigger=PropertyChanged}" 
+                   OpenPaneLength="200" 
+                   PaneBackground="{x:Null}"
+                   Grid.ColumnSpan="2"
+                   Grid.RowSpan="2">
+            <SplitView.Pane>
+                <Grid x:Name="SplitViewPane"                   
+                        ManipulationMode="TranslateX"
+                        ManipulationCompleted="SplitViewPane_ManipulationCompleted"
+                        Margin="0,50,0,0" Background="{StaticResource BackgroundColor}">
+
+                    <ListView ItemsSource="{Binding Menu, UpdateSourceTrigger=PropertyChanged}"
+                              attach:MenuItemClickCommand.Command="{Binding MenuItemClickCommand}"
+                              IsItemClickEnabled="True" Margin="5,0,0,0"
+                              ItemContainerStyle="{StaticResource ListViewMenuStyle}">
+                        
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal" Height="48">
+                                    <TextBlock Text="{Binding Icon, Mode=OneWay}" Style="{StaticResource IconTextBlockStyle}" />
+                                    <TextBlock Text="{Binding Title, Mode=OneWay}" Style="{StaticResource MenuTitleTextBlockStyle}" FontSize="18" Foreground="Black" Opacity="0.7" Margin="5,0,0,0" />
+                                </StackPanel>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </SplitView.Pane>
+            <SplitView.Content>
+                <Grid>
+                    <Frame x:Name="SplitViewFrame">
+                        <Frame.ContentTransitions>
+                            <TransitionCollection>
+                                <NavigationThemeTransition>
+                                    <NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                                        <EntranceNavigationTransitionInfo />
+                                    </NavigationThemeTransition.DefaultNavigationTransitionInfo>
+                                </NavigationThemeTransition>
+                            </TransitionCollection>
+                        </Frame.ContentTransitions>
+                    </Frame>
+
+                    <Grid ManipulationMode="TranslateX"
+                          ManipulationCompleted="SplitViewOpener_ManipulationCompleted"
+                          Width="10"
+                          Background="Transparent"
+                          HorizontalAlignment="Left"
+                          VerticalAlignment="Stretch" IsHoldingEnabled="False" IsDoubleTapEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False">
+                    </Grid>
+
+                    <StackPanel Orientation="Horizontal" VerticalAlignment="Top">
+                        <Button x:Name="menuButton"
+                            Margin="0"
+                            FontFamily="Segoe MDL2 Assets"
+                            Content="&#xE700;"
+                            Background="Transparent"
+                            Foreground="Black"
+                            Width="48"
+                            Height="48"
+                            VerticalAlignment="Top"
+                            BorderThickness="0" Command="{Binding MenuButtonClickCommand}"
+                            FontSize="24"
+                        />
+                        <TextBlock Text="{Binding CurrentPageName, UpdateSourceTrigger=PropertyChanged}" 
+                                   FontSize="17" 
+                                   VerticalAlignment="Top" 
+                                   Margin="5,15,0,0" 
+                                   Foreground="#FF4B4B4B" 
+                                   FontFamily="Segoe UI Semilight" 
+                                   HorizontalAlignment="Left" FontWeight="Normal" />
+                    </StackPanel>
+                </Grid>
+            </SplitView.Content>
+        </SplitView>
+    </Grid>
+</Page>

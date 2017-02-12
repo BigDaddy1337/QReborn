@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="TheQuestionReborn.View.SettingsView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TheQuestionReborn.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource BackgroundColor}">
+        <StackPanel Margin="20,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+            <TextBlock Text="Отображение вопросов на плитке" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,0,10,0"/>
+            <ToggleSwitch IsOn="{Binding IsTileShow, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <StackPanel Visibility="{Binding VisibilityTileUpdateTiming, UpdateSourceTrigger=PropertyChanged}">
+                <TextBlock Text="Время обновления плитки" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,0,10,0" Margin="0,15,0,0"/>
+                <ComboBox Width="250" ItemsSource="{Binding TimeUpdateTiles}" SelectedIndex="{Binding TimeUpdateTileIndex, Mode=TwoWay}">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Title}"/>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
+                    <!--<TextBlock Text="30 минут"/>
+                    <TextBlock Text="1 час"/>
+                    <TextBlock Text="2 часа"/>
+                    <TextBlock Text="3 часа"/>
+                    <TextBlock Text="6 часов"/>
+                    <TextBlock Text="12 часов"/>
+                    <TextBlock Text="24 часа"/>-->
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
+

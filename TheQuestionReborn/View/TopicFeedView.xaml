@@ -1,0 +1,81 @@
+﻿<Page
+    x:Class="TheQuestionReborn.View.TopicFeedView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TheQuestionReborn.View"
+    xmlns:attach="using:TheQuestionReborn.Helpers.AttachProperties"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource BackgroundColor}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <ListView Grid.Row="1" 
+                  ItemsSource="{Binding TopicFeed, UpdateSourceTrigger=PropertyChanged}" 
+                  ItemContainerStyle="{StaticResource ListViewItemmultiSelect}"
+                  attach:ItemClickCommand.Command="{Binding ItemClickCommand}"
+                  SelectionMode="Single" IsItemClickEnabled="True">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <Grid Margin="0,5" MaxHeight="150">
+                        <Image Name="ItemImage" Source="{Binding ImagePath}" Margin="0" Opacity="0.5" Canvas.ZIndex="1"/>
+                        <Image Source="{Binding ImageBackground}" Opacity="0.9"/>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"  Canvas.ZIndex="1">
+                            <TextBlock Text="{Binding Title}" 
+                               FontSize="15"
+                               FontWeight="Bold" 
+                               Foreground="White" 
+                               Opacity="1" 
+                               VerticalAlignment="Center" 
+                               TextWrapping="Wrap" 
+                               TextAlignment="Center"
+                               Margin="10,0" CharacterSpacing="-40" MaxLines="4"/>
+                        </StackPanel>
+                        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0" >
+                            <TextBlock Text="{Binding Username}" 
+                               FontSize="10" 
+                               FontWeight="Bold" 
+                               Foreground="White" 
+                               Opacity="0.7" 
+                               HorizontalAlignment="Center"/>
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Bottom" Margin="0,0,10,10" Canvas.ZIndex="1">
+                            <StackPanel Orientation="Horizontal" Margin="0,5,0,0" Canvas.ZIndex="1">
+                                <Image Source="ms-appx:///Assets/views.png" 
+                                   Width="20" 
+                                   Margin="10,1,0,0" 
+                                   Opacity="0.9"/>
+
+                                <TextBlock Text="{Binding ViewsCount}" 
+                                   Foreground="White"  
+                                   FontSize="11" 
+                                   FontWeight="Normal" Margin="3,0,0,0"/>
+
+                                <Image Source="ms-appx:///Assets/answers.png" 
+                                   Width="20" 
+                                   Margin="10,1,0,0"/>
+
+                                <TextBlock Text="{Binding AnswersCount}"
+                                   Foreground="White"  
+                                   FontSize="11" 
+                                   VerticalAlignment="Center" 
+                                   Opacity="0.9" 
+                                   FontWeight="Normal" Margin="3,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+                        <TextBlock Text="{Binding Date}" 
+                               FontSize="11" 
+                               Foreground="White" 
+                               HorizontalAlignment="Center" 
+                               Margin="0,10,0,0" 
+                               Opacity="0.7"
+                               TextWrapping="Wrap" FontWeight="Bold" VerticalAlignment="Bottom" Canvas.ZIndex="1"/>
+                    </Grid>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </Grid>
+</Page>

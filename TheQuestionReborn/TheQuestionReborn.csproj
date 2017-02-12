@@ -1,0 +1,269 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{BF3D4272-8B3E-47A5-9A35-7E1A18C38BFA}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TheQuestionReborn</RootNamespace>
+    <AssemblyName>TheQuestionReborn</AssemblyName>
+    <DefaultLanguage>ru-RU</DefaultLanguage>
+    <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
+    <TargetPlatformVersion>10.0.10586.0</TargetPlatformVersion>
+    <TargetPlatformMinVersion>10.0.10586.0</TargetPlatformMinVersion>
+    <MinimumVisualStudioVersion>14</MinimumVisualStudioVersion>
+    <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PackageCertificateKeyFile>TheQuestionReborn_TemporaryKey.pfx</PackageCertificateKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_UWP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+    <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
+    <Content Include="ApplicationInsights.config">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="project.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="API\ContentFactory.cs" />
+    <Compile Include="API\ContentSources\Account\AccountFactory.cs" />
+    <Compile Include="API\ContentSources\Account\Base\AccountSourceBase.cs" />
+    <Compile Include="API\ContentSources\Account\AnsweredFeedSource.cs" />
+    <Compile Include="API\ContentSources\Account\QuestionedFeedSource.cs" />
+    <Compile Include="API\ContentSources\Feed\FeedSource.cs" />
+    <Compile Include="API\ContentSources\Feed\PopularFeedSource.cs" />
+    <Compile Include="API\ContentSources\Search\SearchSource.cs" />
+    <Compile Include="API\ContentSources\SourceBase.cs" />
+    <Compile Include="API\ContentSources\Topic\TopicFeedSource.cs" />
+    <Compile Include="API\ContentSources\Topic\TopicSource.cs" />
+    <Compile Include="API\IncrementalLoadingCollection.cs" />
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Helpers\AttachProperties\CategoryPopularClickCommand.cs" />
+    <Compile Include="Helpers\AttachProperties\GridTapped.cs" />
+    <Compile Include="Helpers\AttachProperties\ItemClickCommand.cs" />
+    <Compile Include="Helpers\AttachProperties\MenuItemClickCommand.cs" />
+    <Compile Include="Helpers\AttachProperties\TextChangedTextBoxCommand.cs" />
+    <Compile Include="Helpers\Enums.cs" />
+    <Compile Include="Helpers\Extenstions.cs" />
+    <Compile Include="Helpers\HtmlToTextBlock\AnswerTextBehavior.cs" />
+    <Compile Include="Helpers\HtmlToTextBlock\Behavior.cs" />
+    <Compile Include="Model\AnswerModel.cs" />
+    <Compile Include="Model\ApplicationData.cs" />
+    <Compile Include="Model\CommentModel.cs" />
+    <Compile Include="Model\MenuItem.cs" />
+    <Compile Include="Model\QuestionModel.cs" />
+    <Compile Include="Model\AccountModel.cs" />
+    <Compile Include="MVVMBase\RelayCommand.cs" />
+    <Compile Include="MVVMBase\ViewModelBase.cs" />
+    <Compile Include="Settings\Settings.cs" />
+    <Compile Include="Settings\ProgramState.cs" />
+    <Compile Include="ViewModel\AccountViewModel.cs" />
+    <Compile Include="ViewModel\FeedViewModel.cs" />
+    <Compile Include="ViewModel\PopularFeedViewModel.cs" />
+    <Compile Include="ViewModel\QuestionViewModel.cs" />
+    <Compile Include="ViewModel\SearchViewModel.cs" />
+    <Compile Include="ViewModel\SettingsViewModel.cs" />
+    <Compile Include="ViewModel\TopicFeedViewModel.cs" />
+    <Compile Include="ViewModel\TopicsViewModel.cs" />
+    <Compile Include="View\AccountView.xaml.cs">
+      <DependentUpon>AccountView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\FeedView.xaml.cs">
+      <DependentUpon>FeedView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\MainView.xaml.cs">
+      <DependentUpon>MainView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\MainViewModel.cs" />
+    <Compile Include="View\PopularFeedView.xaml.cs">
+      <DependentUpon>PopularFeedView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\QuestionView.xaml.cs">
+      <DependentUpon>QuestionView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SearchView.xaml.cs">
+      <DependentUpon>SearchView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingsView.xaml.cs">
+      <DependentUpon>SettingsView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TopicFeedView.xaml.cs">
+      <DependentUpon>TopicFeedView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="View\TopicsView.xaml.cs">
+      <DependentUpon>TopicsView.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <None Include="TheQuestionReborn_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\answers.png" />
+    <Content Include="Assets\answersBlack.png" />
+    <Content Include="Assets\Answer\comments.png" />
+    <Content Include="Assets\BadgeLogo.scale-400.png" />
+    <Content Include="Assets\black.png" />
+    <Content Include="Assets\grey.png" />
+    <Content Include="Assets\Answer\minus.png" />
+    <Content Include="Assets\Answer\plus.png" />
+    <Content Include="Assets\Profile\profile_default.jpeg" />
+    <Content Include="Assets\SplashScreen.scale-100.png" />
+    <Content Include="Assets\Square150x150Logo.scale-400.png" />
+    <Content Include="Assets\Square44x44Logo.scale-400.png" />
+    <Content Include="Assets\Square71x71Logo.scale-400.png" />
+    <Content Include="Assets\StoreLogo.scale-400.png" />
+    <Content Include="Assets\views.png" />
+    <Content Include="Assets\viewsBlack.png" />
+    <Content Include="Assets\white.png" />
+    <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <Content Include="Properties\Default.rd.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Controls\SplitViewPaneItemControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\AccountView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\FeedView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\MainView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\PopularFeedView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="View\QuestionView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SearchView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\SettingsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TopicFeedView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="View\TopicsView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">
+      <Name>Behaviors SDK %28XAML%29</Name>
+    </SDKReference>
+    <SDKReference Include="WindowsMobile, Version=10.0.10586.0">
+      <Name>Windows Mobile Extensions for the UWP</Name>
+    </SDKReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TileManagment\TileManagment.csproj">
+      <Project>{4d3f5bff-1f90-4859-8044-a53872c32087}</Project>
+      <Name>TileManagment</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
+    <VisualStudioVersion>14.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

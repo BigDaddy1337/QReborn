@@ -1,0 +1,65 @@
+﻿<Page
+    x:Class="TheQuestionReborn.View.SearchView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:TheQuestionReborn.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:attach="using:TheQuestionReborn.Helpers.AttachProperties"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource BackgroundColor}">
+        <TextBox Margin="10,50,10,10" 
+                         TextWrapping="Wrap" 
+                         VerticalAlignment="Top"
+                         FontFamily="Global Sans Serif"
+                         BorderBrush="#FFD1D1D1"
+                         attach:TextChangedTextBoxCommand.Command="{Binding TextChangedCommand}"/>
+            <ListView ShowsScrollingPlaceholders="False" 
+                      IsItemClickEnabled="True"
+                      ItemsSource="{Binding SearchFeed}" 
+                      Margin="0,100,0,0"
+                      attach:ItemClickCommand.Command="{Binding ItemClickCommand}"
+                      SelectionMode="None">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                    <Border BorderBrush="#FFC1C1C1" BorderThickness="0,0,0,0.5">
+                        <StackPanel>
+                            <TextBlock 
+        		                Text="{Binding Title}" 
+                                Foreground="Black" 
+                                FontSize="17"
+                                Margin="0" 
+                                TextWrapping="WrapWholeWords" 
+                                Padding="5,10,5,0" 
+                                FontFamily="Global Sans Serif"/>
+                            
+                            <StackPanel Orientation="Horizontal" Margin="0,10" Canvas.ZIndex="1" HorizontalAlignment="Left">
+                                <Image Source="ms-appx:///Assets/viewsBlack.png" 
+                                   Width="20" 
+                                   Margin="5,1,0,0" 
+                                   Opacity="0.9"/>
+
+                                <TextBlock Text="{Binding ViewsCount}" 
+                                   Foreground="Black"  
+                                   FontSize="11" 
+                                   FontWeight="Normal" Margin="3,0,0,0"/>
+
+                                <Image Source="ms-appx:///Assets/answersBlack.png" 
+                                   Width="20" 
+                                   Margin="10,1,0,0"/>
+
+                                <TextBlock Text="{Binding AnswersCount}"
+                                   Foreground="Black"  
+                                   FontSize="11" 
+                                   VerticalAlignment="Center" 
+                                   Opacity="0.9" 
+                                   FontWeight="Normal" Margin="3,0,0,0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </Border>
+                </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ListView>
+    </Grid>
+</Page>

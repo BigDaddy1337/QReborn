@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="TemplateSettings" />
+    <RootPropertyPathName Name="DragItemsCount" />
+    <RootPropertyPathName Name="AnsweredFeed" />
+    <RootPropertyPathName Name="ItemClickCommand" />
+    <RootPropertyPathName Name="PreviewAnswer" />
+    <RootPropertyPathName Name="AccountAnswer" />
+    <RootPropertyPathName Name="Info" />
+    <RootPropertyPathName Name="UserName" />
+    <RootPropertyPathName Name="ImagePath" />
+    <RootPropertyPathName Name="AnswersCount" />
+    <RootPropertyPathName Name="ViewsCount" />
+    <RootPropertyPathName Name="Date" />
+    <RootPropertyPathName Name="Title" />
+    <RootPropertyPathName Name="QuestenedFeed" />
+    <RootPropertyPathName Name="Username" />
+    <RootPropertyPathName Name="Account" />
+    <RootPropertyPathName Name="Cover" />
+    <RootPropertyPathName Name="Feed" />
+    <RootPropertyPathName Name="ImageBackground" />
+    <RootPropertyPathName Name="RefreshButtonClickCommand" />
+    <RootPropertyPathName Name="IsMenuOpen" />
+    <RootPropertyPathName Name="Menu" />
+    <RootPropertyPathName Name="MenuItemClickCommand" />
+    <RootPropertyPathName Name="Icon" />
+    <RootPropertyPathName Name="CurrentPageName" />
+    <RootPropertyPathName Name="MenuButtonClickCommand" />
+    <RootPropertyPathName Name="PopularFeed" />
+    <RootPropertyPathName Name="Likes" />
+    <RootPropertyPathName Name="CategoryClickCommand" />
+    <RootPropertyPathName Name="Month" />
+    <RootPropertyPathName Name="Week" />
+    <RootPropertyPathName Name="Day" />
+    <RootPropertyPathName Name="ListComments" />
+    <RootPropertyPathName Name="Votes" />
+    <RootPropertyPathName Name="Text" />
+    <RootPropertyPathName Name="Author" />
+    <RootPropertyPathName Name="ProgressCommentsVisibility" />
+    <RootPropertyPathName Name="ProgressGridVisibility" />
+    <RootPropertyPathName Name="ListAnswers" />
+    <RootPropertyPathName Name="Comments" />
+    <RootPropertyPathName Name="User" />
+    <RootPropertyPathName Name="Question" />
+    <RootPropertyPathName Name="Topics" />
+    <RootPropertyPathName Name="SearchFeed" />
+    <RootPropertyPathName Name="TextChangedCommand" />
+    <RootPropertyPathName Name="VisibilityTileUpdateTiming" />
+    <RootPropertyPathName Name="TimeUpdateTiles" />
+    <RootPropertyPathName Name="TimeUpdateTileIndex" />
+    <RootPropertyPathName Name="IsTileShow" />
+    <RootPropertyPathName Name="TopicFeed" />
+    <RootPropertyPathName Name="TopicsFeed" />
+    <RootPropertyPathName Name="Color" />
+    <RootPropertyPathName Name="CountOfQuestions" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBoxItem" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Control">
+      <RootProperty Name="Background" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="HorizontalContentAlignment" />
+      <RootProperty Name="Template" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalContentAlignment" />
+      <RootProperty Name="UseSystemFocusVisuals" />
+      <RootMethod Name="GetIsTemplateFocusTarget" />
+      <RootMethod Name="SetIsTemplateFocusTarget" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="TextAlignment" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="TextTrimming" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="LineStackingStrategy" />
+      <RootProperty Name="IsColorFontEnabled" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="CharacterSpacing" />
+      <RootProperty Name="MaxLines" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MaxHeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.FrameworkElement">
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="MinWidth" />
+      <RootProperty Name="MinHeight" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.UIElement">
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="IsHoldingEnabled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="VerticalSnapPointsType" />
+      <RootProperty Name="HorizontalSnapPointsType" />
+      <RootProperty Name="HorizontalScrollMode" />
+      <RootProperty Name="HorizontalScrollBarVisibility" />
+      <RootProperty Name="VerticalScrollMode" />
+      <RootProperty Name="VerticalScrollBarVisibility" />
+      <RootProperty Name="IsHorizontalRailEnabled" />
+      <RootProperty Name="IsVerticalRailEnabled" />
+      <RootProperty Name="IsHorizontalScrollChainingEnabled" />
+      <RootProperty Name="IsVerticalScrollChainingEnabled" />
+      <RootProperty Name="IsDeferredScrollingEnabled" />
+      <RootProperty Name="BringIntoViewOnFocusChange" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="ZoomMode" />
+      <RootProperty Name="TabNavigation" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="Content" />
+      <RootEvent Name="ViewChanging" />
+      <RootMethod Name="GetHorizontalScrollBarVisibility" />
+      <RootMethod Name="SetHorizontalScrollBarVisibility" />
+      <RootMethod Name="GetVerticalScrollBarVisibility" />
+      <RootMethod Name="SetVerticalScrollBarVisibility" />
+      <RootMethod Name="GetHorizontalScrollMode" />
+      <RootMethod Name="SetHorizontalScrollMode" />
+      <RootMethod Name="GetIsHorizontalRailEnabled" />
+      <RootMethod Name="SetIsHorizontalRailEnabled" />
+      <RootMethod Name="GetVerticalScrollMode" />
+      <RootMethod Name="SetVerticalScrollMode" />
+      <RootMethod Name="GetIsVerticalRailEnabled" />
+      <RootMethod Name="SetIsVerticalRailEnabled" />
+      <RootMethod Name="GetZoomMode" />
+      <RootMethod Name="SetZoomMode" />
+      <RootMethod Name="GetIsDeferredScrollingEnabled" />
+      <RootMethod Name="SetIsDeferredScrollingEnabled" />
+      <RootMethod Name="GetBringIntoViewOnFocusChange" />
+      <RootMethod Name="SetBringIntoViewOnFocusChange" />
+      <RootMethod Name="GetIsHorizontalScrollChainingEnabled" />
+      <RootMethod Name="SetIsHorizontalScrollChainingEnabled" />
+      <RootMethod Name="GetIsVerticalScrollChainingEnabled" />
+      <RootMethod Name="SetIsVerticalScrollChainingEnabled" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsControl">
+      <RootProperty Name="ItemsPanel" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.SolidColorBrush">
+      <RootProperty Name="Color" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListViewItem" />
+    <RootType FullName="Windows.UI.Xaml.Controls.FlipView" />
+    <RootType FullName="Windows.UI.Xaml.Setter">
+      <RootProperty Name="Property" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
+      <RootProperty Name="TargetType" />
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Background" />
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="RowDefinitions" />
+      <RootProperty Name="MaxHeight" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="ManipulationMode" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="IsHoldingEnabled" />
+      <RootProperty Name="IsDoubleTapEnabled" />
+      <RootProperty Name="IsRightTapEnabled" />
+      <RootProperty Name="IsTapEnabled" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="MinHeight" />
+      <RootEvent Name="ManipulationCompleted" />
+      <RootEvent Name="Tapped" />
+      <RootMethod Name="GetColumnSpan" />
+      <RootMethod Name="SetColumnSpan" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+      <RootMethod Name="GetRowSpan" />
+      <RootMethod Name="SetRowSpan" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualStateManager">
+      <RootMethod Name="GetVisualStateGroups" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.TemplateBindingExtension" />
+    <RootType FullName="Windows.UI.Xaml.VisualStateGroup">
+      <RootProperty Name="States" />
+      <RootProperty Name="Transitions" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualState">
+      <RootProperty Name="Storyboard" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.Storyboard">
+      <RootProperty Name="Children" />
+      <RootProperty Name="AutoReverse" />
+      <RootProperty Name="RepeatBehavior" />
+      <RootMethod Name="GetTargetName" />
+      <RootMethod Name="SetTargetName" />
+      <RootMethod Name="GetTargetProperty" />
+      <RootMethod Name="SetTargetProperty" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.FadeOutThemeAnimation">
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimation">
+      <RootProperty Name="Duration" />
+      <RootProperty Name="To" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.FadeInThemeAnimation">
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DragItemThemeAnimation">
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DropTargetItemThemeAnimation">
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.VisualTransition">
+      <RootProperty Name="To" />
+      <RootProperty Name="GeneratedDuration" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DragOverThemeAnimation">
+      <RootProperty Name="TargetName" />
+      <RootProperty Name="ToOffset" />
+      <RootProperty Name="Direction" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.ObjectAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DiscreteObjectKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.DoubleAnimationUsingKeyFrames">
+      <RootProperty Name="KeyFrames" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EasingDoubleKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.SplineDoubleKeyFrame">
+      <RootProperty Name="KeyTime" />
+      <RootProperty Name="Value" />
+      <RootProperty Name="KeySpline" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerDownThemeAnimation">
+      <RootProperty Name="TargetName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.PointerUpThemeAnimation" />
+    <RootType FullName="Windows.UI.Xaml.Shapes.Rectangle">
+      <RootProperty Name="IsHitTestVisible" />
+      <RootProperty Name="Fill" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Stroke" />
+      <RootProperty Name="StrokeEndLineCap" />
+      <RootProperty Name="StrokeDashArray" />
+      <RootProperty Name="StrokeDashOffset" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Automation.AutomationProperties">
+      <RootMethod Name="GetAccessibilityView" />
+      <RootMethod Name="SetAccessibilityView" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="BorderBrush" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Clip" />
+      <RootProperty Name="RenderTransform" />
+      <RootProperty Name="Child" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="CornerRadius" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="RelativeSource" />
+      <RootProperty Name="Path" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Mode" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.RelativeSource" />
+    <RootType FullName="Windows.UI.Xaml.Media.RectangleGeometry">
+      <RootProperty Name="Rect" />
+      <RootProperty Name="Transform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.TranslateTransform" />
+    <RootType FullName="Windows.UI.Xaml.Controls.FontIcon">
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Glyph" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="Visibility" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="UseLayoutRounding" />
+      <RootProperty Name="MirroredWhenRightToLeft" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.NullExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ContentPresenter">
+      <RootProperty Name="ContentTransitions" />
+      <RootProperty Name="ContentTemplate" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Template" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="UseSystemFocusVisuals" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="BorderBrush" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPresenter" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ItemsPanelTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.VirtualizingStackPanel">
+      <RootProperty Name="AreScrollSnapPointsRegular" />
+      <RootProperty Name="Orientation" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
+      <RootProperty Name="Resources" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="SplitViewSample_UWP.Controls.SplitViewPaneItemControl" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
+      <RootProperty Name="BottomAppBar" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="Stretch" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Opacity" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Name" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Items" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PivotItem">
+      <RootProperty Name="Header" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="ItemContainerStyle" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="IsItemClickEnabled" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="BorderThickness" />
+      <RootProperty Name="ShowsScrollingPlaceholders" />
+    </RootType>
+    <RootType FullName="TheQuestionReborn.Helpers.AttachProperties.ItemClickCommand">
+      <RootMethod Name="GetCommand" />
+      <RootMethod Name="SetCommand" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="CornerRadius" />
+      <RootProperty Name="Visibility" />
+      <RootEvent Name="Tapped" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Shapes.Ellipse">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Fill" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.ImageBrush">
+      <RootProperty Name="ImageSource" />
+      <RootProperty Name="AlignmentX" />
+      <RootProperty Name="AlignmentY" />
+      <RootProperty Name="Stretch" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Canvas">
+      <RootMethod Name="GetZIndex" />
+      <RootMethod Name="SetZIndex" />
+    </RootType>
+    <RootType FullName="TheQuestionReborn.View.AccountView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.CommandBar">
+      <RootProperty Name="Background" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="IsTabStop" />
+      <RootProperty Name="PrimaryCommands" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
+      <RootProperty Name="Command" />
+      <RootProperty Name="Icon" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
+      <RootProperty Name="Symbol" />
+      <RootProperty Name="RenderTransformOrigin" />
+      <RootProperty Name="RenderTransform" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.CompositeTransform" />
+    <RootType FullName="TheQuestionReborn.View.FeedView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.SplitView">
+      <RootProperty Name="IsPaneOpen" />
+      <RootProperty Name="OpenPaneLength" />
+      <RootProperty Name="PaneBackground" />
+      <RootProperty Name="Pane" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="TheQuestionReborn.Helpers.AttachProperties.MenuItemClickCommand">
+      <RootMethod Name="GetCommand" />
+      <RootMethod Name="SetCommand" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Frame">
+      <RootProperty Name="ContentTransitions" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.TransitionCollection" />
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.NavigationThemeTransition">
+      <RootProperty Name="DefaultNavigationTransitionInfo" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.Animation.EntranceNavigationTransitionInfo" />
+    <RootType FullName="TheQuestionReborn.MainPage" />
+    <RootType FullName="TheQuestionReborn.Helpers.AttachProperties.CategoryPopularClickCommand">
+      <RootMethod Name="GetCommand" />
+      <RootMethod Name="SetCommand" />
+    </RootType>
+    <RootType FullName="TheQuestionReborn.View.PopularFeedView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="IsActive" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.LinearGradientBrush">
+      <RootProperty Name="EndPoint" />
+      <RootProperty Name="StartPoint" />
+      <RootProperty Name="GradientStops" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Media.GradientStop">
+      <RootProperty Name="Color" />
+      <RootProperty Name="Offset" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
+      <RootMethod Name="GetBehaviors" />
+      <RootMethod Name="SetBehaviors" />
+    </RootType>
+    <RootType FullName="TheQuestionReborn.Helpers.HtmlToTextBlock.AnswerTextBehavior" />
+    <RootType FullName="TheQuestionReborn.View.QuestionView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="BorderBrush" />
+    </RootType>
+    <RootType FullName="TheQuestionReborn.Helpers.AttachProperties.TextChangedTextBoxCommand">
+      <RootMethod Name="GetCommand" />
+      <RootMethod Name="SetCommand" />
+    </RootType>
+    <RootType FullName="TheQuestionReborn.View.SearchView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ToggleSwitch">
+      <RootProperty Name="IsOn" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="Width" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedIndex" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="TheQuestionReborn.View.SettingsView" />
+    <RootType FullName="TheQuestionReborn.View.TopicFeedView" />
+    <RootType FullName="TheQuestionReborn.View.TopicsView" />
+  </Roots.RootTypes>
+</Roots>

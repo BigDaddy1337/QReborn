@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Serialization_DateTime" xml:space="preserve">
+    <value>Invalid Soap date string, '{0}'.</value>
+  </data>
+  <data name="Serialization_SetType" xml:space="preserve">
+    <value>Type '{0}' already set.</value>
+  </data>
+  <data name="Serialization_TypeMissing" xml:space="preserve">
+    <value>Type missing for member of type Object '{0}'.</value>
+  </data>
+  <data name="Serialization_ObjNoID" xml:space="preserve">
+    <value>Object {0} has never been assigned an objectID.</value>
+  </data>
+  <data name="Serialization_SoapFault" xml:space="preserve">
+    <value>SoapFault received with faultString: '{0}'</value>
+  </data>
+  <data name="Serialization_StreamEnd" xml:space="preserve">
+    <value>End of Stream encountered before parsing completed.</value>
+  </data>
+  <data name="Serialization_ObjectMissing" xml:space="preserve">
+    <value>Object for element '{0}' not found; probably invalid soap syntax.</value>
+  </data>
+  <data name="Serialization_Position" xml:space="preserve">
+    <value>Member name '{0}' not found.</value>
+  </data>
+  <data name="Serialization_Parser_NSAssem" xml:space="preserve">
+    <value>Parse Error, Invalid XML NSAssem namespace {0}</value>
+  </data>
+  <data name="Serialization_HeaderReflection" xml:space="preserve">
+    <value>Header Reflection Error, Number of Value members {0}.</value>
+  </data>
+  <data name="Serialization_ArgumentNull_Obj" xml:space="preserve">
+    <value>Null object for type {0}</value>
+  </data>
+  <data name="Serialization_ElementEmpty" xml:space="preserve">
+    <value>Serializing an object with an empty element name</value>
+  </data>
+  <data name="Serialization_Parser_Envelope" xml:space="preserve">
+    <value>Soap Parse Error: &lt;SOAP-ENV:Envelope&gt; not first element, first element is {0}</value>
+  </data>
+  <data name="Serialization_UseCode" xml:space="preserve">
+    <value>Invalid SoapWriter use code {0}</value>
+  </data>
+  <data name="Serialization_MustUnderstand" xml:space="preserve">
+    <value>Invalid MustUnderstand attribute value {0}</value>
+  </data>
+  <data name="Serialization_WrongNumberOfMembers" xml:space="preserve">
+    <value>Wrong number of Members. Object {0} has {1} members, number of members deserialized is {2}.</value>
+  </data>
+  <data name="Serialization_ArrayTypeObject" xml:space="preserve">
+    <value>Array element type was Object, dt attribute was null.</value>
+  </data>
+  <data name="Serialization_TopObjectInstantiate" xml:space="preserve">
+    <value>Top Object cannot be instantiated for element '{0}'.</value>
+  </data>
+  <data name="Serialization_ISerializableMemberInfo" xml:space="preserve">
+    <value>MemberInfo requested for ISerializable type.</value>
+  </data>
+  <data name="Serialization_ArrayDimensions" xml:space="preserve">
+    <value>Invalid Array Dimensions {0}</value>
+  </data>
+  <data name="Serialization_XMLElement" xml:space="preserve">
+    <value>Invalid Element '{0}'.</value>
+  </data>
+  <data name="Serialization_TypeResolved" xml:space="preserve">
+    <value>Type not resolved for member '{0}'.</value>
+  </data>
+  <data name="Serialization_TypeElement" xml:space="preserve">
+    <value>Object type not found for element {0}</value>
+  </data>
+  <data name="Serialization_StackRange" xml:space="preserve">
+    <value>Stack index out of range, stackId {0}</value>
+  </data>
+  <data name="Serialization_MethodSignature" xml:space="preserve">
+    <value>Invalid method signature '{0}'.</value>
+  </data>
+  <data name="Serialization_TypeCode" xml:space="preserve">
+    <value>Invalid type code in stream, '{0}'.</value>
+  </data>
+  <data name="Serialization_TypeRead" xml:space="preserve">
+    <value>Invalid Read type request, '{0}'.</value>
+  </data>
+  <data name="Serialization_NoMemberInfo" xml:space="preserve">
+    <value>No MemberInfo for Object '{0}'.</value>
+  </data>
+  <data name="Serialization_AssemblyId" xml:space="preserve">
+    <value>No assembly ID for type '{0}'. {0}</value>
+  </data>
+  <data name="Serialization_SoapNoGenericsSupport" xml:space="preserve">
+    <value>Soap Serializer does not support serializing Generic Types : {0}.</value>
+  </data>
+  <data name="Serialization_ArrayType" xml:space="preserve">
+    <value>Array element type not found {0}</value>
+  </data>
+  <data name="Serialization_NonSerType" xml:space="preserve">
+    <value>The type {0} in Assembly {1} is not marked as serializable.</value>
+  </data>
+  <data name="Serialization_Parser_xmlAssembly" xml:space="preserve">
+    <value>Parse Error, no assembly associated with Xml key {0}</value>
+  </data>
+  <data name="Serialization_Parser_BodyChild" xml:space="preserve">
+    <value>Soap Parse Error: &lt;SOAP-ENV:Body&gt; not child of &lt;SOAP:Envelope&gt;</value>
+  </data>
+  <data name="Serialization_ISerializableTypes" xml:space="preserve">
+    <value>Types not available for ISerializable object '{0}'.</value>
+  </data>
+  <data name="Serialization_NameSpaceEnum" xml:space="preserve">
+    <value>Invalid NamespaceEnum {0}</value>
+  </data>
+  <data name="Serialization_Parser_xmlType" xml:space="preserve">
+    <value>Parse Error, no type associated with Xml key {0}</value>
+  </data>
+  <data name="Serialization_SerMemberInfo" xml:space="preserve">
+    <value>MemberInfo type '{0}' cannot be Serialized.</value>
+  </data>
+  <data name="Serialization_AssemblyString" xml:space="preserve">
+    <value>Parse Error, No assembly associated with string {0}</value>
+  </data>
+  <data name="Serialization_ParseError" xml:space="preserve">
+    <value>Parse Error - Current element not compatible with next element '{0}'.</value>
+  </data>
+  <data name="Serialization_Map" xml:space="preserve">
+    <value>No map for object '{0}'.</value>
+  </data>
+  <data name="Serialization_TimeSpan" xml:space="preserve">
+    <value>Invalid Soap timeDuration string, '{0}'.</value>
+  </data>
+  <data name="Serialization_Parser_xsd" xml:space="preserve">
+    <value>Parse Error, xsd type not valid: {0}</value>
+  </data>
+  <data name="Serialization_Parser_xml" xml:space="preserve">
+    <value>Parse Error, no Xml key for name or type {0}</value>
+  </data>
+  <data name="Serialization_TopObject" xml:space="preserve">
+    <value>No Top Object.</value>
+  </data>
+  <data name="Serialization_TypeWrite" xml:space="preserve">
+    <value>Invalid write type request, '{0}'.</value>
+  </data>
+  <data name="Serialization_CdataInAttribute" xml:space="preserve">
+    <value>CDATA cannot be written in an attribute, {0}.</value>
+  </data>
+  <data name="Serialization_MemberInfo" xml:space="preserve">
+    <value>MemberInfo cannot be obtained for ISerialized Object '{0}'.</value>
+  </data>
+  <data name="Serialization_TypeExpected" xml:space="preserve">
+    <value>Invalid Expected type.</value>
+  </data>
+  <data name="Serialization_Assembly" xml:space="preserve">
+    <value>No assembly information for object on the wire</value>
+  </data>
+  <data name="Serialization_Century" xml:space="preserve">
+    <value>Invalid Soap century string, '{0}'.</value>
+  </data>
+  <data name="Serialization_ValueFixup" xml:space="preserve">
+    <value>ValueFixup Fixup, memberInfo not instance of FieldInfo or PropertyInfo '{0}'.</value>
+  </data>
+  <data name="Serialization_Parser" xml:space="preserve">
+    <value>Soap Parser Error {0}</value>
+  </data>
+  <data name="Serialization_NonPrimitive_XmlAttribute" xml:space="preserve">
+    <value>XmlAttribute can only be used for a string or primitive type, member name {0}</value>
+  </data>
+  <data name="Serialization_Stream" xml:space="preserve">
+    <value>Attempting to Deserialize an empty stream</value>
+  </data>
+  <data name="Serialization_Syntax" xml:space="preserve">
+    <value>Soap Syntax Error {0}</value>
+  </data>
+  <data name="Serialization_TypeCoercion" xml:space="preserve">
+    <value>String value {0} cannot be coerced into type {1}.</value>
+  </data>
+  <data name="Serialization_Parser_Header" xml:space="preserve">
+    <value>Soap Parse Error: &lt;SOAP:Header&gt; not child of &lt;SOAP:Envelope&gt;</value>
+  </data>
+  <data name="Serialization_InsufficientPermission" xml:space="preserve">
+    <value>The application does not have sufficient permission to deserialize this stream.</value>
+  </data>
+  <data name="Serialization_ObjectTypeEnum" xml:space="preserve">
+    <value>Invalid ObjectTypeEnum, '{0}'.</value>
+  </data>
+  <data name="Serialization_MBRAsMBV" xml:space="preserve">
+    <value>Type {0} must be marshaled by reference in this context.</value>
+  </data>
+  <data name="Serialization_Parser_BodyOnce" xml:space="preserve">
+    <value>Soap Parse Error: &lt;SOAP-ENV:Body&gt; can only appear once in stream</value>
+  </data>
+  <data name="Serialization_NonClsCompliantException" xml:space="preserve">
+    <value>A non-CLS Compliant Exception (i.e. an object that does not derive from System.Exception) was thrown.</value>
+  </data>
+</root>

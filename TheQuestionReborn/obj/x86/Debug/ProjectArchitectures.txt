@@ -1,0 +1,2 @@
+C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\TheQuestionReborn.csproj;x86
+C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileManagment\TileManagment.csproj;x86
