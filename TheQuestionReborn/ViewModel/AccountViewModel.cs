@@ -5,7 +5,6 @@ using TheQuestionReborn.MVVMBase;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
 using TheQuestionReborn.API;
-using TheQuestionReborn.API.ContentSources.Feed;
 using TheQuestionReborn.View;
 
 namespace TheQuestionReborn.ViewModel

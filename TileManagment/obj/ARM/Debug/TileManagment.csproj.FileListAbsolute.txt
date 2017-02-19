@@ -8,6 +8,7 @@ C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileMana
 C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileManagment\bin\ARM\Debug\Accessibility.dll
 C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileManagment\bin\ARM\Debug\System.Deployment.dll
 C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileManagment\bin\ARM\Debug\System.Runtime.Serialization.Formatters.Soap.dll
+C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileManagment\obj\ARM\Debug\TileManagment.csprojResolveAssemblyReference.cache
 C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileManagment\obj\ARM\Debug\TileManagment.winmd
 C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileManagment\obj\ARM\Debug\TileManagment.pdb
 C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TileManagment\obj\ARM\Debug\TileManagment.winmdobj

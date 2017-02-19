@@ -17,7 +17,10 @@
     <EnableDotNetNativeCompatibleProfile>true</EnableDotNetNativeCompatibleProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{A5A43C5B-DE2A-4C0C-9213-0A381AF9435A};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>TheQuestionReborn_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>TheQuestionReborn_StoreKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>False</AppxAutoIncrementPackageRevision>
+    <AppxBundle>Never</AppxBundle>
+    <PackageCertificateThumbprint>C5EBFCA61C246155B52232682A6499B4FE15137C</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
     <DebugSymbols>true</DebugSymbols>
@@ -172,6 +175,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="TheQuestionReborn_StoreKey.pfx" />
     <None Include="TheQuestionReborn_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
@@ -193,6 +197,7 @@
     <Content Include="Assets\viewsBlack.png" />
     <Content Include="Assets\white.png" />
     <Content Include="Assets\Wide310x150Logo.scale-400.png" />
+    <None Include="Package.StoreAssociation.xml" />
     <Content Include="Properties\Default.rd.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -245,6 +250,12 @@
     <SDKReference Include="BehaviorsXamlSDKManaged, Version=12.0">
       <Name>Behaviors SDK %28XAML%29</Name>
     </SDKReference>
+    <SDKReference Include="Microsoft.NET.Native.Runtime.1.1, Version=1.1">
+      <Name>Microsoft .NET Core Runtime Package for Windows</Name>
+    </SDKReference>
+    <SDKReference Include="Microsoft.UniversalCRT.Debug, Version=10.0.10586.0">
+      <Name>Microsoft Universal CRT Debug Runtime</Name>
+    </SDKReference>
     <SDKReference Include="WindowsMobile, Version=10.0.10586.0">
       <Name>Windows Mobile Extensions for the UWP</Name>
     </SDKReference>
@@ -254,6 +265,9 @@
       <Project>{4d3f5bff-1f90-4859-8044-a53872c32087}</Project>
       <Name>TileManagment</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

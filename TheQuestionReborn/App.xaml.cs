@@ -1,27 +1,17 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.IO;
 using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using TheQuestionReborn.API;
-using TheQuestionReborn.API.ContentSources;
 using TheQuestionReborn.Model;
 using Windows.ApplicationModel;
 using Windows.ApplicationModel.Activation;
 using Windows.ApplicationModel.Background;
-using Windows.Foundation;
 using Windows.UI.ViewManagement;
 using Windows.Foundation.Metadata;
 using Windows.UI.Core;
 using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Microsoft.Toolkit.Uwp.Notifications;
 using TheQuestionReborn.Settings;
 using TheQuestionReborn.View;
 
@@ -173,13 +163,53 @@ namespace TheQuestionReborn
                 return;
             }
 
+            UpdateTile(ApplicationData.Feed.FirstOrDefault());
+
             var taskBuilder = new BackgroundTaskBuilder
             {
                 Name = taskName,
                 TaskEntryPoint = taskEntryPoint
             };
             taskBuilder.SetTrigger(new TimeTrigger(settingsUpdateTile.TimeTileUpdate, false));
+
             var registration = taskBuilder.Register();
+        }
+
+        public static void UpdateTile(QuestionModel item)
+        {
+            if (item == null || !ProgramState.CurrentState.Settings.IsTileShow) return;
+
+            var updater = TileUpdateManager.CreateTileUpdaterForApplication();
+
+            updater.Clear();
+
+            var content = new TileContent()
+            {
+                Visual = new TileVisual()
+                {
+                    Branding = TileBranding.None,
+                    TileWide = new TileBinding()
+                    {
+                        Content = new TileBindingContentAdaptive()
+                        {
+                            TextStacking = TileTextStacking.Center,
+                            Children =
+                            {
+                                new AdaptiveText()
+                                {
+                                    Text = item.Title,
+                                    HintStyle = AdaptiveTextStyle.Caption,
+                                    HintAlign = AdaptiveTextAlign.Center,
+                                    HintWrap = true
+                                },
+                            }
+                        }
+                    }
+                }
+            };
+
+            var notificationQuestion = new TileNotification(content.GetXml()) {Tag = "ques"};
+            updater.Update(notificationQuestion);
         }
     }
 }

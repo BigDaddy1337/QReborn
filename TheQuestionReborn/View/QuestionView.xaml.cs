@@ -45,7 +45,7 @@ namespace TheQuestionReborn.View
 
             var answer = panel?.DataContext as AnswerModel;
 
-            if (int.Parse(answer?.Comments) == 0)
+            if (answer == null || int.Parse(answer.Comments) == 0)
                 return;
 
             CommentsAnimationAppearance.Begin();
@@ -53,7 +53,6 @@ namespace TheQuestionReborn.View
             CommentsGrid.Visibility = Visibility.Visible;
 
             questionViewModel.GetComments(answer);
-
         }
 
         private void CommentManipulationCompleted(object sender, ManipulationCompletedRoutedEventArgs e)

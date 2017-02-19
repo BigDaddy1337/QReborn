@@ -48,41 +48,20 @@
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\grey.png">
       <PackagePath>Assets\grey.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\LockScreenLogo.scale-200.png">
-      <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Profile\profile_default.jpeg">
       <PackagePath>Assets\Profile\profile_default.jpeg</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\SplashScreen.scale-125.png">
-      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\SplashScreen.scale-200.png">
-      <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Square150x150Logo.scale-200.png">
-      <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Square44x44Logo.scale-200.png">
-      <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
-      <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Square71x71Logo.scale-400.png">
       <PackagePath>Assets\Square71x71Logo.scale-400.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
@@ -95,9 +74,6 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\white.png">
       <PackagePath>Assets\white.png</PackagePath>
-    </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Wide310x150Logo.scale-200.png">
-      <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\bin\ARM\Debug\Core\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>

@@ -39,6 +39,7 @@
     <RootPropertyPathName Name="Author" />
     <RootPropertyPathName Name="ProgressCommentsVisibility" />
     <RootPropertyPathName Name="ProgressGridVisibility" />
+    <RootPropertyPathName Name="Error" />
     <RootPropertyPathName Name="ListAnswers" />
     <RootPropertyPathName Name="Comments" />
     <RootPropertyPathName Name="User" />
@@ -50,6 +51,7 @@
     <RootPropertyPathName Name="TimeUpdateTiles" />
     <RootPropertyPathName Name="TimeUpdateTileIndex" />
     <RootPropertyPathName Name="IsTileShow" />
+    <RootPropertyPathName Name="Version" />
     <RootPropertyPathName Name="TopicFeed" />
     <RootPropertyPathName Name="TopicsFeed" />
     <RootPropertyPathName Name="Color" />
@@ -98,6 +100,8 @@
       <RootProperty Name="CharacterSpacing" />
       <RootProperty Name="MaxLines" />
       <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Height" />
       <RootProperty Name="MaxHeight" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.FrameworkElement">
@@ -189,7 +193,6 @@
       <RootProperty Name="CornerRadius" />
       <RootProperty Name="Opacity" />
       <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="MaxHeight" />
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="ManipulationMode" />
       <RootProperty Name="Width" />
@@ -200,6 +203,7 @@
       <RootProperty Name="RenderTransformOrigin" />
       <RootProperty Name="Visibility" />
       <RootProperty Name="MinHeight" />
+      <RootProperty Name="MaxHeight" />
       <RootEvent Name="ManipulationCompleted" />
       <RootEvent Name="Tapped" />
       <RootMethod Name="GetColumnSpan" />
@@ -388,6 +392,7 @@
       <RootProperty Name="Opacity" />
       <RootProperty Name="Margin" />
       <RootProperty Name="Width" />
+      <RootProperty Name="MaxHeight" />
       <RootProperty Name="Name" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
@@ -534,6 +539,7 @@
       <RootProperty Name="Width" />
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedIndex" />
+      <RootProperty Name="Margin" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="TheQuestionReborn.View.SettingsView" />

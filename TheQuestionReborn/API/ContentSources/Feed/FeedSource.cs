@@ -19,6 +19,9 @@ namespace TheQuestionReborn.API.ContentSources.Feed
 
             await Factory.GetFeedData(pageSize, pageIndex);
 
+            if (pageIndex == 0)
+                App.UpdateTile(ApplicationData.Feed.FirstOrDefault());
+
             await ApplicationData.Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
             {
                 ApplicationData.IsDataFeedLoadingAnimation.Stop();

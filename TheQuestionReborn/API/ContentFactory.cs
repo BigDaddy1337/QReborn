@@ -1,18 +1,13 @@
 ﻿using HtmlAgilityPack;
-using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using TheQuestionReborn.Helpers;
 using TheQuestionReborn.Model;
-using Windows.UI;
 using Windows.UI.Core;
-using Windows.UI.Xaml;
-using Windows.UI.Xaml.Media;
 
 namespace TheQuestionReborn.API
 {
@@ -256,7 +251,7 @@ namespace TheQuestionReborn.API
                     if (imagePathNode != null)
                         imagePath = imagePathNode.Attributes["data-bgset"].Value.Substring(2);
 
-                    var date = question.FirstChild.ChildNodes.Count < 2 ? question.ChildNodes[1].ChildNodes[2].InnerText.TranslateMonth() : question.FirstChild.ChildNodes[1].InnerText.TranslateMonth();
+                   //var date = question.FirstChild.ChildNodes.Count < 2 ? question.ChildNodes[1].ChildNodes[2].InnerText.TranslateMonth() : question.FirstChild.ChildNodes[1].InnerText.TranslateMonth();
 
                     var counters = question.Descendants().First(x => (x.Name == "div" && x.Attributes["class"] != null && x.Attributes["class"].Value.Contains("list-questions__header-menu-left\\")));
                     var viewsCount = counters.FirstChild.ChildNodes[1].InnerText;
@@ -270,7 +265,7 @@ namespace TheQuestionReborn.API
                         Url = string.Format("https://thequestion.ru{0}", url),
                         Topics = topics,
                         ImagePath = imagePath,
-                        Date = date,
+                       //Date = date,
                         ViewsCount = viewsCount,
                         AnswersCount = answerCount
                     };

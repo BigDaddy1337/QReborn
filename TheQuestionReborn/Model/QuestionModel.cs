@@ -45,26 +45,6 @@ namespace TheQuestionReborn.Model
         public string ImageBackground { get; private set; } = "ms-appx:///Assets/black.png";
     }
 
-    //public class Title
-    //{
-    //    private Brush color;
-    //    public string Text { get; set; }
-
-    //    public Brush Color
-    //    {
-    //        get
-    //        {
-    //            return color;
-    //        }
-
-    //        set
-    //        {
-    //            color = value;
-    //        }
-    //    }
-    //}
-
-
     public class Topic
     {
         public Brush Color { get; set; }

@@ -1,5 +1,4 @@
 ﻿using TheQuestionReborn.API;
-using TheQuestionReborn.API.ContentSources;
 using TheQuestionReborn.API.ContentSources.Topic;
 using TheQuestionReborn.Model;
 using TheQuestionReborn.MVVMBase;

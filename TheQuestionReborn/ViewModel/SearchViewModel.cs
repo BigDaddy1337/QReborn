@@ -1,6 +1,4 @@
-﻿using System;
-using TheQuestionReborn.API;
-using TheQuestionReborn.API.ContentSources;
+﻿using TheQuestionReborn.API;
 using TheQuestionReborn.API.ContentSources.Search;
 using TheQuestionReborn.Model;
 using TheQuestionReborn.MVVMBase;
@@ -20,6 +18,7 @@ namespace TheQuestionReborn.ViewModel
         {
             ApplicationData.Question = clickedItem;
             ApplicationData.AppFrame.Navigate(typeof(QuestionView));
+
         }
 
         private void TextChanged(string text)

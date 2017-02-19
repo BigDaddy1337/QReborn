@@ -196,7 +196,7 @@
                                                     Padding="0,7,0,0" 
                                                     Foreground="Black" 
                                                     FontWeight="Bold" 
-                                                    Margin="75,0,0,0" 
+                                                    Margin="70,0,0,0" 
                                                     TextWrapping="WrapWholeWords"/>
                                                 <TextBlock 
          		                                    Text="{Binding User.Info}" 
@@ -207,7 +207,7 @@
                                                     HorizontalAlignment="Left" 
                                                     TextWrapping="WrapWholeWords" 
                                                     TextTrimming="Clip" 
-                                                    Margin="75,2,10,0" CharacterSpacing="-20" MaxLines="2"/>
+                                                    Margin="70,2,10,0" CharacterSpacing="-20" MaxLines="2"/>
                                             </StackPanel>
                                         </Grid>
                                     </Grid>
@@ -268,6 +268,12 @@
                         </ItemsControl.ItemTemplate>
                     </ItemsControl>
                 </StackPanel>
+                <TextBlock Text="{Binding Error}"
+                    Foreground="Black"
+                    HorizontalAlignment="Center" 
+                    Margin="0" 
+                    FontSize="12" 
+                    VerticalAlignment="Center"/>
                 <Grid Margin="5,218,5,0" Background="White" CornerRadius="5" Visibility="{Binding ProgressGridVisibility, UpdateSourceTrigger=PropertyChanged}">
                     <Grid Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Top">
                         <ProgressRing Width="30" Height="30" IsActive="True" Foreground="#FF635C56" />
@@ -291,22 +297,13 @@
                     </LinearGradientBrush>
                 </Grid.Background>
             </Grid>
-
-            <Grid Background="White" HorizontalAlignment="Left" VerticalAlignment="Top" Width="33" Height="26" Margin="7,12,0,0" Opacity="0.1"/>
-
+            
             <Grid CornerRadius="5"  HorizontalAlignment="Center" Visibility="{Binding ProgressCommentsVisibility, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center">
                 <ProgressRing Width="30" Height="30" IsActive="True" Foreground="#FFF1F1F1" />
             </Grid>
 
             <ScrollViewer>
                 <Grid>
-                    <TextBlock Text="Комментарии" 
-                                FontSize="17" 
-                                VerticalAlignment="Top" 
-                                Margin="50,15,0,0" 
-                                Foreground="{ThemeResource BackgroundColor}" 
-                                FontFamily="Segoe UI Semilight" 
-                                FontWeight="Normal" CharacterSpacing="50" HorizontalAlignment="Left" />
                     <ItemsControl x:ConnectionId='9' x:Name="CommentsControl" ItemsSource="{Binding ListComments, UpdateSourceTrigger=PropertyChanged}" Margin="0,50,0,0">
                         <ItemsControl.ItemsPanel>
                             <ItemsPanelTemplate>
@@ -376,7 +373,17 @@
                 </Grid>
             </ScrollViewer>
 
-            <Grid x:ConnectionId='8' HorizontalAlignment="Left" Width="70"  ManipulationMode="TranslateX"                                                      Background="Transparent"/>
+            <!--<Grid Background="{StaticResource BackgroundColor}" Height="50" Opacity="1" VerticalAlignment="Top"/>
+
+            <TextBlock Text="Комментарии" 
+                                FontSize="17" 
+                                VerticalAlignment="Top" 
+                                Margin="50,15,0,0" 
+                                Foreground="Black" 
+                                FontFamily="Segoe UI Semilight" 
+                                FontWeight="Normal" CharacterSpacing="50" HorizontalAlignment="Left" />-->
+
+            <Grid x:ConnectionId='8' HorizontalAlignment="Left" Width="100"  ManipulationMode="TranslateX"                                                      Background="Transparent"/>
         </Grid>
     </Grid>
 </Page>

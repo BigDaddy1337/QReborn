@@ -1,0 +1,11 @@
+App.xbf
+Controls\SplitViewPaneItemControl.xbf
+View\AccountView.xbf
+View\FeedView.xbf
+View\MainView.xbf
+View\PopularFeedView.xbf
+View\QuestionView.xbf
+View\SearchView.xbf
+View\SettingsView.xbf
+View\TopicFeedView.xbf
+View\TopicsView.xbf

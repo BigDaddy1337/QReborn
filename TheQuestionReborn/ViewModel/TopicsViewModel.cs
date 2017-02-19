@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TheQuestionReborn.API;
-using TheQuestionReborn.API.ContentSources;
+﻿using TheQuestionReborn.API;
 using TheQuestionReborn.API.ContentSources.Topic;
 using TheQuestionReborn.Model;
 using TheQuestionReborn.MVVMBase;

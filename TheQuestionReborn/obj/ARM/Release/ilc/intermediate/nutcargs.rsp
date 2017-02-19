@@ -1,0 +1,9 @@
+/ignoreAccessChecks
+/metadataFile "C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\obj\ARM\Release\ilc\intermediate\ILTransformed\TheQuestionReborn.metadata"
+/reflectionMetadataAssemblyName "System.Private.CoreLib"
+/o
+/sharedGenerics
+/ilmergeinfo "C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\obj\ARM\Release\ilc\intermediate\ILTransformed\TheQuestionReborn.csv"
+/sharedGenericsMode StandardHeuristics
+/in "C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\obj\ARM\Release\ilc\intermediate\ILTransformed\TheQuestionReborn.ilexe"
+/out "C:\Users\Sergey\Documents\Visual Studio 2015\Projects\TheQuestionReborn\TheQuestionReborn\obj\ARM\Release\ilc\intermediate\MDIL\TheQuestionReborn.mdilexe"

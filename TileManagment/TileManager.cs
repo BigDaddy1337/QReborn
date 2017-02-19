@@ -1,21 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Forms;
-using System.Xml;
 using Windows.ApplicationModel.Background;
-using Windows.Storage;
 using Windows.UI.Notifications;
-using Windows.Web.Syndication;
 using HtmlAgilityPack;
 using Microsoft.Toolkit.Uwp.Notifications;
 using HtmlDocument = HtmlAgilityPack.HtmlDocument;
-using XmlDocument = Windows.Data.Xml.Dom.XmlDocument;
 
 namespace TileManagment
 {
@@ -39,41 +31,37 @@ namespace TileManagment
 
         private static void UpdateTile(TileQuestionModel feedItem)
         {
-            // Create a tile update manager for the specified syndication feed.
             var updater = TileUpdateManager.CreateTileUpdaterForApplication();
-            updater.EnableNotificationQueue(true);
+
             updater.Clear();
 
             var content = new TileContent()
             {
                 Visual = new TileVisual()
                 {
+                    Branding = TileBranding.None,
                     TileWide = new TileBinding()
                     {
                         Content = new TileBindingContentAdaptive()
                         {
                             TextStacking = TileTextStacking.Center,
-                            //BackgroundImage = new TileBackgroundImage()
-                            //{
-                            //    Source = feedItem.Url,
-                            //    HintOverlay = 20
-                            //},
                             Children =
                             {
                                 new AdaptiveText()
                                 {
                                     Text = feedItem.Title,
-                                    HintStyle = AdaptiveTextStyle.CaptionSubtle,
+                                    HintStyle = AdaptiveTextStyle.Caption,
                                     HintAlign = AdaptiveTextAlign.Center,
                                     HintWrap = true
-                                }
+                                },
                             }
                         }
                     }
                 }
             };
 
-            updater.Update(new TileNotification(content.GetXml()));
+            var notificationQuestion = new TileNotification(content.GetXml()) { Tag = "ques" };
+            updater.Update(notificationQuestion);
         }
 
         private async Task<TileQuestionModel> GetFeedItem()

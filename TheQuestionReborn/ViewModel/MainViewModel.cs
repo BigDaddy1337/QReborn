@@ -1,15 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using Windows.UI.Notifications;
-using TheQuestionReborn.API;
-using TheQuestionReborn.API.ContentSources;
 using TheQuestionReborn.Model;
 using TheQuestionReborn.MVVMBase;
 using TheQuestionReborn.View;
-using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Navigation;
-using Microsoft.Toolkit.Uwp.Notifications;
-using TheQuestionReborn.API.ContentSources.Account;
 
 namespace TheQuestionReborn.ViewModel
 {

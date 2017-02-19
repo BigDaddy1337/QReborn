@@ -33,7 +33,7 @@
                         <DataTemplate>
                             <Grid Margin="0,5">
                                 <Image Opacity="0.9" Source="ms-appx:///Assets/black.png"/>
-                                <Image Source="{Binding ImagePath}" Margin="0" Opacity="0.5" Canvas.ZIndex="1"/>
+                                <Image Source="{Binding ImagePath}" MaxHeight="150" Margin="0" Opacity="0.5" Canvas.ZIndex="1"/>
                                 <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"  Canvas.ZIndex="1">
                                     <TextBlock Text="{Binding Title}" 
                                FontSize="15"
@@ -102,7 +102,7 @@
                             <StackPanel>
                                 <Grid Margin="0,5,0,0">
                                     <Image Opacity="0.9" Source="ms-appx:///Assets/black.png"/>
-                                    <Image Source="{Binding ImagePath}" Margin="0" Opacity="0.5" Canvas.ZIndex="1"/>
+                                    <Image Source="{Binding ImagePath}" MaxHeight="160" Margin="0" Opacity="0.5" Canvas.ZIndex="1"/>
 
                                     <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"  Canvas.ZIndex="1">
                                         <TextBlock Text="{Binding Title}" 

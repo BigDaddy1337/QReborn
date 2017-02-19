@@ -23,6 +23,7 @@
             <RowDefinition Height="50" />
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
+        
         <ListView x:ConnectionId='2' x:Name="FeedListView" 
                   Grid.Row="1" 
                   ItemsSource="{Binding Feed}" 
@@ -31,9 +32,9 @@
                   SelectionMode="Single" IsItemClickEnabled="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <Grid Margin="0,5" MaxHeight="150">
+                    <Grid Margin="0,5">
                         <Image Source="{Binding ImageBackground}" Opacity="0.9"/>
-                        <Image Source="{Binding ImagePath}" Opacity="0.5" Canvas.ZIndex="1"/>
+                        <Image Source="{Binding ImagePath}" MaxHeight="160" Opacity="0.5" Canvas.ZIndex="1"/>
                         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center"  Canvas.ZIndex="1">
                             <TextBlock Text="{Binding Title}" 
                                FontSize="15"

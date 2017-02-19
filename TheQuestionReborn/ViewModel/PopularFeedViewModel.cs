@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using TheQuestionReborn.API;
-using TheQuestionReborn.API.ContentSources;
 using TheQuestionReborn.Helpers;
 using TheQuestionReborn.Model;
 using TheQuestionReborn.MVVMBase;
 using TheQuestionReborn.View;
 using Windows.UI;
-using Windows.UI.Core;
 using Windows.UI.Xaml.Media;
 using TheQuestionReborn.API.ContentSources.Feed;
 
@@ -112,7 +106,6 @@ namespace TheQuestionReborn.ViewModel
                 RaisePropertyChanged("Menu");
             }
         }
-
         public IncrementalLoadingCollection<PopularFeedSource, QuestionModel> PopularFeed => ApplicationData.PopularFeedLoadingCollection;
 
         public DelegateCommand<string> CategoryClickCommand => new DelegateCommand<string>(CategoryClick);

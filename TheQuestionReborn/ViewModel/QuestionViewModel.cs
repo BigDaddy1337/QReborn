@@ -1,15 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TheQuestionReborn.API;
 using TheQuestionReborn.Model;
 using TheQuestionReborn.MVVMBase;
-using TheQuestionReborn.View;
 using Windows.UI.Core;
 using Windows.UI.Xaml;
-using Windows.UI.Xaml.Media.Animation;
 
 namespace TheQuestionReborn.ViewModel
 {
@@ -21,6 +16,7 @@ namespace TheQuestionReborn.ViewModel
         private List<CommentModel> comments;
         private Visibility progressGridVisibility;
         private Visibility progressCommentsVisibility;
+        private string error = string.Empty;
 
         public QuestionViewModel()
         {
@@ -117,16 +113,20 @@ namespace TheQuestionReborn.ViewModel
 
 
 
-        //public DelegateCommand<Topic> ItemClickCommand
-        //{
-        //    get { return new DelegateCommand<Topic>(ItemClick); }
-        //}
 
-        //private void ItemClick(Topic clickedItem)
-        //{
-        //    ApplicationData.Topic = clickedItem;
-        //    ApplicationData.AppFrame.Navigate(typeof(TopicFeedView));
-        //}
+        public string Error
+        {
+            get
+            {
+                return error;
+            }
+            set
+            {
+                error = value;
+                RaisePropertyChanged("Error");
+            }
+
+        }
 
         public async void GetComments(AnswerModel answer)
         {
@@ -148,14 +148,25 @@ namespace TheQuestionReborn.ViewModel
             await dispatcher.RunAsync(CoreDispatcherPriority.Normal, async () =>
             {
 
-                    ProgressGridVisibility = Visibility.Visible;
+                ProgressGridVisibility = Visibility.Visible;
 
+                try
+                {
                     if (question.Answers == null)
                         ListAnswers = await factory.GetQuestionBody(question);
                     else
                         ListAnswers = question.Answers;
 
+                }
+                catch (Exception e)
+                {
+                    Error = "Ошибка загрузки страницы";
+                }
+                finally
+                {
                     ProgressGridVisibility = Visibility.Collapsed;
+                }
+
             });
         }
     }

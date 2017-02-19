@@ -1,6 +1,4 @@
-﻿using TheQuestionReborn.ViewModel;
-
-namespace TheQuestionReborn.Settings
+﻿namespace TheQuestionReborn.Settings
 {
     public class Settings
     {

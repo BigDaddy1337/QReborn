@@ -8,25 +8,26 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource BackgroundColor}">
-        <StackPanel Margin="20,70,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
-            <TextBlock Text="Отображение вопросов на плитке" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,0,10,0"/>
-            <ToggleSwitch IsOn="{Binding IsTileShow, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
-            <StackPanel Visibility="{Binding VisibilityTileUpdateTiming, UpdateSourceTrigger=PropertyChanged}">
-                <TextBlock Text="Время обновления плитки" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,0,10,0" Margin="0,15,0,0"/>
-                <ComboBox Width="250" ItemsSource="{Binding TimeUpdateTiles}" SelectedIndex="{Binding TimeUpdateTileIndex, Mode=TwoWay}">
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Title}"/>
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
-                    <!--<TextBlock Text="30 минут"/>
-                    <TextBlock Text="1 час"/>
-                    <TextBlock Text="2 часа"/>
-                    <TextBlock Text="3 часа"/>
-                    <TextBlock Text="6 часов"/>
-                    <TextBlock Text="12 часов"/>
-                    <TextBlock Text="24 часа"/>-->
-                </ComboBox>
+        <StackPanel Margin="0,50,0,0">
+            <StackPanel Margin="0,50,0,0">
+                <Image Source="ms-appx:///Assets/SplashScreen.png" Height="130"/>
+                <TextBlock Text="Неофициальный клиент сайта thequestion.ru"  HorizontalAlignment="Center" Margin="0,5,0,0" FontWeight="SemiBold" TextWrapping="Wrap" Width="200" Height="38" TextAlignment="Center"/>
+            <TextBlock Text="{Binding Version}" HorizontalAlignment="Center" FontSize="13" Opacity="0.6" Margin="0,5,0,0"/> 
+            </StackPanel>
+            
+            <StackPanel Margin="20,30,0,0" VerticalAlignment="Top" HorizontalAlignment="Left">
+                <TextBlock Text="Отображение вопросов на плитке" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,0,10,0"/>
+                <ToggleSwitch IsOn="{Binding IsTileShow, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                <StackPanel Visibility="{Binding VisibilityTileUpdateTiming, UpdateSourceTrigger=PropertyChanged}">
+                    <TextBlock Text="Время обновления плитки" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Center" Padding="0,0,10,0" Margin="0,15,0,0"/>
+                    <ComboBox Width="250" ItemsSource="{Binding TimeUpdateTiles}" SelectedIndex="{Binding TimeUpdateTileIndex, Mode=TwoWay}" Margin="0,5,0,0">
+                        <ComboBox.ItemTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Title}"/>
+                            </DataTemplate>
+                        </ComboBox.ItemTemplate>
+                    </ComboBox>
+                </StackPanel>
             </StackPanel>
         </StackPanel>
     </Grid>
